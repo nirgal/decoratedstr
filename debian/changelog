@@ -1,0 +1,48 @@
+decoratedstr (0.5) UNRELEASED; urgency=low
+  * Renamed source package.
+  * Fixed standard version in control file.
+  * Spelling fix in man page.
+  * Show python versions in short descriptions.
+
+ -- Jean-Michel Nirgal Vourgère <jmv_deb@nirgal.com>  Tue, 11 Feb 2014 17:17:02 +0100
+
+python-decoratedstr (0.4) UNRELEASED; urgency=low
+  * Changed compat level to 9.
+  * Switch from python-central to dh_python2.
+  * Bumped standard version to 3.9.5
+  * Added python3 support
+  * Added new package python3-decoratedstr
+
+ -- Jean-Michel Vourgère <jmv_deb@nirgal.com>  Tue, 11 Feb 2014 17:17:02 +0100
+
+python-decoratedstr (0.3) UNRELEASED; urgency=low
+
+  * Added debian/source/format
+  * Change debian/rules to use trival dh $@
+  * Added  Depends: ${misc:Depends}
+  * Bumped standards to 3.9.1 (no change requiered)
+  * Changed compat level to 8 (squeeze minimum), adjusted debhelper version
+    requiered.
+  * Change /usr/bin/decoratedstr link into a "python -m" wrapper.
+
+ -- Jean-Michel Vourgère <jmv_deb@nirgal.com>  Tue, 16 Jul 2013 18:54:42 +0000
+
+python-decoratedstr (0.2) UNRELEASED; urgency=low
+
+  * Added command line interface with charset option, regexp optionnal, help.
+  * Added a link in /usr/bin
+  * Added a man
+
+ -- Jean-Michel Vourgère <jmv_deb@nirgal.com>  Thu, 28 May 2009 01:17:56 +0200
+
+python-decoratedstr (0.1.1) UNRELEASED; urgency=low
+
+  * Added support for letter 'İ' that has no lower equivalent
+
+ -- Jean-Michel Vourgère <jmv_deb@nirgal.com>  Wed, 13 May 2009 11:50:18 +0300
+
+python-decoratedstr (0.1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Jean-Michel Vourgère <jmv_deb@nirgal.com>  Tue, 20 Jan 2009 11:21:39 +0100

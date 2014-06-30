@@ -1,0 +1,5 @@
+#!/usr/bin/make -f
+export DH_ALWAYS_EXCLUDE=.svn
+
+%:
+	dh $@ --with python2,python3

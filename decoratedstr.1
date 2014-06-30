@@ -1,0 +1,65 @@
+.\"     Title: decratedstr
+.\"    Author: 
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 05/31/2009
+.\"    Manual: May 27, 2009
+.\"    Source: May 27, 2009
+.\"
+.TH "DECRATEDSTR" "1" "05/31/2009" "May 27, 2009" "May 27, 2009"
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.SH "NAME"
+decoratedstr \- decorated characters utility
+.SH "SYNOPSIS"
+.HP 13
+\fBdecoratedstr\fR [[\-h] | [\-\-help]] [\-\-charset\ \fIcharset\fR] [\-r] [\-i]
+.SH "DESCRIPTION"
+.PP
+Removes decorations \- such as accents and rings \- from characters, expands ligatures\&.
+.PP
+Optionnaly prints a matching regular expression\&.
+.PP
+The program accepts the following options:
+.PP
+\-h, \-\-help
+.RS 4
+Display usage summary\&.
+.RE
+.PP
+\-\-charset
+.RS 4
+Sets charset\&. Default is utf\-8\&.
+.RE
+.PP
+\-r, \-\-regexp
+.RS 4
+Output a regexp\&.
+.RE
+.PP
+\-i
+.RS 4
+Make the regexp case insensitive\&.
+.RE
+.SH "EXAMPLES"
+.PP
+\fBdecoratedstr Œuf à la poëlle\fR
+.RS 4
+Oeuf a la poelle
+.RE
+.PP
+decoratedstr \-r Oeuf
+.RS 4
+(Œ|[OÒÓÔÖØŌŎŐ][eèéêëēĕėęě])[uùúûüũūŭůűų]f
+.RE
+.SH "NOTES"
+.PP
+That version uses python print function that will disapear in python 3\&.
+.SH "BUGS"
+.PP
+Python doesn\'t detect the active charset from the environment variables\&. You will need to use \-\-charset option if you don\'t use UTF\-8\&.
+.SH "AUTHOR"
+.PP
+Jean\-Michel Vourgère
+\fIhttp://www\&.nirgal\&.com/\fR\&.

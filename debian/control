@@ -1,0 +1,33 @@
+Source: decoratedstr
+Section: python
+Priority: optional
+Maintainer: Jean-Michel Nirgal Vourgère <jmv_deb@nirgal.com>
+Build-Depends: debhelper (>= 9),
+               python-all (>=2.6.6-3~),
+               python3-all
+Standards-Version: 3.9.5
+Vcs-Svn: svn://svn.nirgal.com/kod/python-decoratedstr
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+
+Package: python-decoratedstr
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-six
+Description: Python 2 library for decorated strings
+ Provide functions for accentuated characters and ligatures handling
+ input: Œuf
+ undecorated: Oeuf
+ regex: (œ|[oòóôöøōŏő][eèéêëēĕėęě])[uùúûüũūŭůűų]f
+ .
+ This is the Python 2 version of the package.
+
+Package: python3-decoratedstr
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-six
+Description: Python 3 library for decorated strings
+ Provide functions for accentuated characters and ligatures handling
+ input: Œuf
+ undecorated: Oeuf
+ regex: (œ|[oòóôöøōŏő][eèéêëēĕėęě])[uùúûüũūŭůűų]f
+ .
+ This is the Python 3 version of the package.
